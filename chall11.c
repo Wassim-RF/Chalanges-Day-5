@@ -28,12 +28,14 @@ void rechercher_remplacer(char source[], const char cible[], const char remplace
     }
 }
 
+
+
 int main() {
     char ch[50], ch1[50], ch2[50];
     printf("Entrer une chaine : ");
     fgets(ch, 50, stdin);
     ch[strcspn(ch, "\n")] = '\0';
-    printf("Entrer le mot que tu veux changer : ");
+    printf("Entrer le mot que tu veux le changer : ");
     fgets(ch1, 50, stdin);
     ch1[strcspn(ch1, "\n")] = '\0'; 
     printf("Entrer le nouveau mot : ");
